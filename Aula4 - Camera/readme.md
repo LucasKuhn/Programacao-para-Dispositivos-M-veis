@@ -274,8 +274,9 @@ private File criaArquivo() throws IOException {
     return imagem;
 }
 ```
+- O método `mostraAlerta` está definido no final deste tutorial
 
-E adicionar no onActivityResult um if para lidar com o resultado da CAMERA
+E adicionar no onActivityResult um if para lidar com o resultado da CAMERA:
 
 ```java
 if (resultCode == RESULT_OK && requestCode == CAMERA) {
@@ -317,20 +318,6 @@ private void compartilharImagem(Uri uri, String tipo){
 - `ACTION_SEND`: Intenção de enviar
 - `putExtra`: Enviar o caminho da imagem para o aplicativo que de fato vai fazer o comparilhamento
 
-### 8. Permissões explícitas de ler arquivos
-
-
-
-## Providers
-Neste app usamos o provider `MediaStore`
- ->`MediaStore.Images.Media.DATA`
-
-Os providers são interfaces que padronizam o acesso as funcionalidades do celular.
-Eles tem operações padrão:
-- Insert()
-- Update()
-- Delete()
-- Query()
 
 ## DICA: AlertDialog
 ```java
